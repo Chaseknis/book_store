@@ -166,7 +166,8 @@ To run tests, run the following command:
 
 > I'll add the following section to the webpage.
 
-- [ ] **[project is ready for now!]()**
+- [ ] **[Add Book feature]**
+- [ ] **[Remove Book feature]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
