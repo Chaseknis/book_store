@@ -1,0 +1,11 @@
+.categories_button_wrapper {
+  padding: 4rem 24px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+button {
+  padding: 6px 12px;
+  align-self: center;
+}
