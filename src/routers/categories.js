@@ -1,13 +1,25 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Layout } from '../layout';
+import { pageStat } from '../redux/categories/categoriesSlice';
 import './styles/categories.css';
 
-const Categories = () => (
-  <Layout>
-    <div className="categories_button_wrapper">
-      <button type="button">Check Status</button>
-    </div>
-  </Layout>
-);
+function Categories() {
+  const dispatch = useDispatch();
+  const currentStatus = useSelector((state) => state.Categories);
+
+  function showStatus() {
+    dispatch(pageStat());
+  }
+
+  return (
+    <Layout>
+      <div className="categories_button_wrapper">
+        <h3>{currentStatus}</h3>
+        <button type="button" onClick={showStatus}>Check Status</button>
+      </div>
+    </Layout>
+  );
+}
 
 export default Categories;
