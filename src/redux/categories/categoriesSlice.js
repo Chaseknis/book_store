@@ -7,7 +7,7 @@ const checkStatus = createAction(CHECKED_STATUS);
 const categoryReducer = (state = [], action) => {
   switch (action.type) {
     case CHECKED_STATUS:
-      return 'under construction';
+      return 'Coming Soon!';
     default:
       return state;
   }
