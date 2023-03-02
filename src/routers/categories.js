@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Layout } from '../layout';
-import { pageStat } from '../redux/categories/categoriesSlice';
+import { checkStatus } from '../redux/categories/categoriesSlice';
 import './styles/categories.css';
 
 function Categories() {
@@ -9,7 +9,7 @@ function Categories() {
   const currentStatus = useSelector((state) => state.Categories);
 
   function showStatus() {
-    dispatch(pageStat());
+    dispatch(checkStatus());
   }
 
   return (

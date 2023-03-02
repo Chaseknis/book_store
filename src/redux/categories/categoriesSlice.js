@@ -6,9 +6,9 @@ const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    pageStat: () => 'Coming Soon',
+    checkStatus: () => 'Coming Soon',
   },
 });
 
-export const { pageStat } = categoriesSlice.actions;
+export const { checkStatus } = categoriesSlice.actions;
 export default categoriesSlice.reducer;
