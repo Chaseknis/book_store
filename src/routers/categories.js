@@ -6,7 +6,7 @@ import './styles/categories.css';
 
 function Categories() {
   const dispatch = useDispatch();
-  const currentStatus = useSelector((state) => state.Categories);
+  const currentStatus = useSelector((state) => state.categories);
 
   function showStatus() {
     dispatch(checkStatus());
