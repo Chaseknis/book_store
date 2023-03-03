@@ -1,10 +1,16 @@
-.book_list_wrapper {
+.blue {
+  color: #0290ff;
+}
+
+.flex {
   display: flex;
+}
+
+.book_list_wrapper {
   flex-direction: column;
 }
 
 .book_list_wrapper ul {
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -22,7 +28,6 @@
 
 @media screen and (min-width: 768px) {
   .book_list_display {
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem 0;
@@ -30,7 +35,6 @@
 
   .book_list_wrapper {
     width: 100%;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -45,19 +49,13 @@
     justify-content: flex-start;
   }
 
-  /* .book_list_button {
-    width: 50%;
-  } */
-
   .book_list_wrapper button {
     background-color: transparent;
     border: none;
     align-self: flex-end;
-    color: #0290ff;
   }
 
   .contents_wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -74,7 +72,6 @@
   }
 
   .links_wrapper ul {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -82,7 +79,6 @@
   }
 
   .titles_wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: left;
     padding: 0;
@@ -102,17 +98,14 @@
     align-self: flex-start;
     margin: 0;
     padding-bottom: 2rem;
-    color: #0290ff;
   }
 
   .chapter_wrapper {
-    display: flex;
     flex-direction: column;
     padding: 0 4rem;
   }
 
   .second_part {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -133,7 +126,6 @@
 
   .progress_bar {
     height: 60px;
-    display: flex;
     gap: 1rem;
     border-right: 1px solid rgb(200, 198, 198);
     padding-right: 6rem;

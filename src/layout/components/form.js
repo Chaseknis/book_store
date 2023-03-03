@@ -31,18 +31,18 @@ const Form = () => {
   };
 
   return (
-    <div className="form_wrapper">
+    <div className="form_wrapper flex">
       <div className="form_progress_bar" />
       <h2>ADD NEW BOOK</h2>
-      <form>
-        <input type="text" id="title" ref={authorValue} placeholder="Add Book Title" />
-        <input type="text" id="author" ref={titleValue} placeholder="Add Book Author" />
-        <select name="categories" id="categories" ref={categoriesValue}>
+      <form className="flex">
+        <input type="text" id="title" ref={authorValue} placeholder="Add Book Title" className="border_none br_5px" />
+        <input type="text" id="author" ref={titleValue} placeholder="Add Book Author" className="border_none br_5px" />
+        <select name="categories" id="categories" ref={categoriesValue} className="border_none br_5px">
           <option value="action">Action</option>
           <option value="Romance">Romance</option>
           <option value="Science Fiction">Science Fiction</option>
         </select>
-        <button type="button" onClick={clickHandler}>ADD BOOK</button>
+        <button type="button" onClick={clickHandler} className="border_none br_5px">ADD BOOK</button>
       </form>
     </div>
   );

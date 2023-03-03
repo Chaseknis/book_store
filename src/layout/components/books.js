@@ -11,26 +11,26 @@ const Book = ({ id, title, author }) => {
   const { progress, chapter } = progressBarLogic();
 
   return (
-    <div className="book_list_display">
-      <div className="book_list_wrapper">
-        <div className="contents_wrapper">
+    <div className="book_list_display flex">
+      <div className="book_list_wrapper flex">
+        <div className="contents_wrapper flex">
           <h2>Action</h2>
-          <ul className="titles_wrapper">
+          <ul className="titles_wrapper flex">
             <li><h3>{author}</h3></li>
-            <li><p>{title}</p></li>
+            <li><p className="blue">{title}</p></li>
           </ul>
 
           <div className="links_wrapper">
-            <ul>
+            <ul className="flex">
               <li><button type="button" className="comments">Comments</button></li>
-              <div className="links_progress_bar" />
+              <div className="links_progress_bar flex" />
               <li><button type="button" onClick={() => dispatch(deleteBook(id))}>Remove</button></li>
               <li><button type="button">Edit</button></li>
             </ul>
           </div>
         </div>
 
-        <div className="second_part">
+        <div className="second_part flex">
           <div className="progress_bar">
             <Progress
               type="circle"
@@ -60,7 +60,7 @@ const Book = ({ id, title, author }) => {
             </div>
           </div>
 
-          <div className="chapter_wrapper">
+          <div className="chapter_wrapper flex">
             <h2>CURRENT CHAPTER</h2>
 
             <p>
