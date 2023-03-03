@@ -15,7 +15,6 @@ function Books() {
 
   return (
     <Layout>
-      {/* <Book title="Dogs in The Hood" author="Snoop Dog" /> */}
       <ul>
         {books.map((book) => (
           <Book

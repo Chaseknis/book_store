@@ -18,6 +18,7 @@ form button {
 
 @media screen and (min-width: 768px) {
   .form_wrapper {
+    width: 90%;
     padding: 0 4rem;
     display: flex;
     flex-direction: column;
@@ -26,11 +27,48 @@ form button {
   }
 
   form {
-    width: 50%;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   form button {
-    padding: 6px 12px;
-    align-self: flex-end;
+    padding: 12px 40px;
+    background-color: #0290ff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
+
+  form input {
+    width: 400px;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+
+  form select {
+    width: 300px;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .form_wrapper h2 {
+    align-self: flex-start;
+    color: #929394;
+  }
+  .form_progress_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    gap: 1rem;
+    border: 1px solid #9ca0a4;
+    margin: 2rem 0;
   }
 }
