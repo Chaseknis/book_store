@@ -4,29 +4,29 @@ import './styles/form.css';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../../redux/books/bookSlice';
 
-function bookProperties(title, author) {
-  return {
-    id: uuidv4(),
+const createBook = (title, author) => (
+  {
+    item_id: uuidv4(),
     title,
     author,
-  };
-}
+    category: 'Adventure',
+  }
+);
 
 const Form = () => {
   const titleValue = useRef();
   const authorValue = useRef();
   const dispatch = useDispatch();
-
-  function clickHandler(e) {
+  const clickHandler = (e) => {
     const title = titleValue.current.value;
     const author = authorValue.current.value;
 
     if (title !== '' && author !== '') {
-      dispatch(addBook(bookProperties(title, author)));
+      dispatch(addBook(createBook(title, author)));
       titleValue.current.value = '';
       authorValue.current.value = '';
     } else e.preventDefault();
-  }
+  };
 
   return (
     <div className="form_wrapper">

@@ -1,9 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
 import bookReducer from './books/bookSlice';
 import categoriesReducer from './categories/categoriesSlice';
 
-const store = configureStore({
-  reducer: { books: bookReducer, categories: categoriesReducer },
-});
+function configureAppStore() {
+  const store = configureStore({
+    reducer: {
+      books: bookReducer,
+      categories: categoriesReducer,
+    },
+    middleware: [thunk],
+  });
 
-export default store;
+  return store;
+}
+
+export default configureAppStore();
