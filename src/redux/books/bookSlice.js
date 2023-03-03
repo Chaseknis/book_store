@@ -36,7 +36,7 @@ const addBook = createAsyncThunk(
   },
 );
 
-const removeBook = createAsyncThunk(
+const deleteBook = createAsyncThunk(
   REMOVE,
   async (id, { dispatch }) => {
     await fetch(`${url}/${id}`, {
@@ -62,5 +62,5 @@ const bookReducer = (state = [], action) => {
   }
 };
 
-export { getAllBooks, addBook, removeBook };
+export { getAllBooks, addBook, deleteBook };
 export default bookReducer;
