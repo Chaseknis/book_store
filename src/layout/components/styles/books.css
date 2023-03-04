@@ -1,49 +1,137 @@
-.book_list_wrapper {
-  padding: 2rem 24px;
+.blue {
+  color: #0290ff;
+}
+
+.flex {
   display: flex;
+}
+
+.book_list_wrapper {
   flex-direction: column;
 }
 
 .book_list_wrapper ul {
-  display: flex;
   flex-direction: row;
-  padding-left: 0;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgba(71, 69, 69, 0.334);
+  justify-content: flex-start;
   border-radius: 3px;
 }
 
 .book_list_wrapper ul li {
   list-style: none;
-  padding: 8px 12px;
   font-size: 14px;
 }
 
 .book_list_wrapper button {
   align-self: flex-end;
-  padding: 6px 12px;
 }
 
 @media screen and (min-width: 768px) {
-  .book_list_wrapper {
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: column;
+  .book_list_display {
     align-items: center;
     justify-content: center;
+    padding: 0.5rem 0;
+  }
+
+  .book_list_wrapper {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
   }
 
   .book_list_wrapper ul {
-    width: 50%;
-  }
-
-  .book_list_button {
-    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .book_list_wrapper button {
-    padding: 6px 12px;
+    background-color: transparent;
+    border: none;
     align-self: flex-end;
+  }
+
+  .contents_wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .comments {
+    padding-left: 0;
+  }
+
+  .contents_wrapper h2 {
+    font-size: 16px;
+    color: #929394;
+    margin: 0;
+  }
+
+  .links_wrapper ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .titles_wrapper {
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+  }
+
+  .titles_wrapper li h3 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .percent p {
+    margin: 0;
+  }
+
+  .titles_wrapper li p {
+    font-size: 14px;
+    align-self: flex-start;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+  .chapter_wrapper {
+    flex-direction: column;
+    padding: 0 4rem;
+  }
+
+  .second_part {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .chapter_wrapper h2 {
+    margin: 0;
+    color: #929394;
+    font-size: 14px;
+  }
+
+  .chapter_button button {
+    padding: 6px 20px;
+    background-color: #0290ff;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .progress_bar {
+    height: 60px;
+    gap: 1rem;
+    border-right: 1px solid rgb(200, 198, 198);
+    padding-right: 6rem;
+  }
+
+  .percent h2 {
+    margin: 0;
   }
 }

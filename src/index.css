@@ -30,6 +30,7 @@ code {
 
 @media screen and (min-width: 768px) {
   body {
+    width: 100%;
     padding: 4rem;
   }
 }
